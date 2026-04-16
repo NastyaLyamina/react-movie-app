@@ -1,0 +1,117 @@
+.auth-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth-container.success-view {
+  text-align: center;
+}
+
+.auth-logo {
+  margin-bottom: 40px;
+  height: 30px;
+}
+@media (max-width: 1024px) {
+  .auth-logo {
+    margin-bottom: 32px;
+  }
+}
+
+.auth-header {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.auth-fields {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input-block {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.input-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+.input-wrapper.error .input-icon {
+  color: #FF7575;
+}
+.input-wrapper.error input {
+  border-color: #FF7575;
+}
+
+.input-wrapper input {
+  width: 100%;
+  height: 56px;
+  padding: 16px 16px 16px 52px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  background: inherit;
+  font-size: 18px;
+  outline: none;
+}
+
+.login-submit-btn {
+  width: 100%;
+  height: 56px;
+  background: #67A5EB;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 28px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.register-link-btn {
+  background: none;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+.success-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.success-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 12px;
+}/*# sourceMappingURL=AuthForm.css.map */

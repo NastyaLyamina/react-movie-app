@@ -1,0 +1,33 @@
+@import "../../styles/variables";
+
+.fav-card-wrapper {
+  position: relative;
+
+  @media (max-width: 768px) {
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    overflow: visible;
+    width: 224px;
+    height: auto;
+  }
+}
+
+.remove-fav-btn {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  padding: 8px;
+  border-radius: 50%;
+  background: $text-white;
+  color: $text-black;
+  border: none;
+  z-index: 10;
+  cursor: pointer;
+  display: none;
+}
+
+.fav-card-wrapper:hover .remove-fav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

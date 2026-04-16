@@ -1,0 +1,30 @@
+.btn-favorite {
+  position: relative;
+  padding: 15px 21px;
+  background: #393B3C;
+  border: 1px solid var(--content-placeholder, rgba(0, 0, 0, 0.4));
+  border-radius: 28px;
+}
+.btn-favorite .icon-wrapper {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-favorite img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+}
+.btn-favorite .icon-filled {
+  opacity: 0;
+}
+.btn-favorite.active .icon-outline {
+  opacity: 0;
+}
+.btn-favorite.active .icon-filled {
+  opacity: 1;
+}/*# sourceMappingURL=FavoriteButton.css.map */

@@ -1,0 +1,25 @@
+$desktop-width: 1440px;
+$container-padding: 40px;
+
+$tablet: 1024px;
+$mobile: 768px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) { @content; }
+}
+
+$bg-dark: #09090C;
+$bg-search: #393B3C;
+$color-red: #FF7575;
+$color-violet: #6A5DC2;
+$text-search: rgba(255, 255, 255, 0.5);
+$text-white: #FFFFFF;
+$text-black: #000000;
+$text-gray: rgba(255, 255, 255, 0.7);
+$accent-blue: #67A5EB; // Цвет кнопки "Трейлер"
+$button-bg: rgba(51, 51, 51, 1); // Фон серых кнопок
+$button-border: rgba(0, 0, 0, 0.4); // Обводка серых кнопок
+$rating-green: #308E21; // зеленый фон рейтинга
+$rating-grey: #777777; // серый фон рейтинга
+$rating-yellow: #A59400; // желтый фон рейтинга
+$purple-line: #DC5DFC; // подчеркивание
